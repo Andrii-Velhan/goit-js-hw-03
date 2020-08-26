@@ -1,6 +1,13 @@
 function getAllPropValues(array, prop) {
   'use strict';
   // Write code under this line
+  let result = [];
+  for (const product in array) {
+    if (prop !== undefined) {
+      result.push(product[prop]);
+    }
+  }
+  return result;
 }
 
 // Объекты и ожидаемый результат
