@@ -2,7 +2,7 @@ function getAllPropValues(array, prop) {
   'use strict';
   // Write code under this line
   let result = [];
-  for (const product in array) {
+  for (const product of array) {
     if (prop !== undefined) {
       result.push(product[prop]);
     }
