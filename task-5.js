@@ -3,7 +3,7 @@ function getAllPropValues(array, prop) {
   // Write code under this line
   let result = [];
   for (const product of array) {
-    if (prop !== undefined) {
+    if (prop in product) {
       result.push(product[prop]);
     }
   }
